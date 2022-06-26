@@ -1,34 +1,34 @@
 package animals;
 
-public class Dog extends Animal{
+public class Dog extends Animal {
 
     protected String breed;
+
     public Dog(String food, String location, String sounds, String bread) {
         super(food, location, sounds);
-        this.breed=bread;
+        this.breed = bread;
     }
-
 
 
     @Override
     public void makeNoise() {
-        System.out.println( "Dog " + breed+ " make Noise ");
+        super.makeNoise( );
     }
 
     @Override
     public void eat() {
-        System.out.println( "Dog eat "+ food);
+        super.eat( );
     }
 
     @Override
     public void sleep() {
-        System.out.println( "Dog sleep"+ location);
+        super.sleep( );
     }
 
 
     public void animalHas() {
 
-        System.out.println( "dog breed "+ breed);
+        System.out.println("Animal breed " + breed);
     }
 
 

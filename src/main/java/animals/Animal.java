@@ -11,18 +11,20 @@ public class Animal {
         this.sounds = sounds;
     }
 
-    protected void makeNoise (){
-     System.out.println( "Animal " + sounds+ "make Noise ");
+    protected void makeNoise() {
+        System.out.println("Animal " + sounds + "  make Noise ");
 
     }
 
-    protected void eat (){
+    protected void eat() {
 
-        System.out.println( "Animal eat "+food );
+        System.out.println("Animal eat " + food);
     }
 
-    protected void sleep (){
+    protected void sleep() {
 
-        System.out.println( "Animal sleep "+ location);
+        System.out.println("Animal sleep " + location);
     }
+
+
 }

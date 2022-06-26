@@ -1,35 +1,33 @@
 package animals;
 
-public class Horse extends Animal{
+public class Horse extends Animal {
 
     protected String mane;
 
-     public Horse(String food, String location, String sounds, String mane){
+    public Horse(String food, String location, String sounds, String mane) {
         super(food, location, sounds);
-        this.mane=mane;
-     }
-
-
-    @Override
-    public void makeNoise() {
-        System.out.println( "Horse "+ sounds+"  make Noise ");
-
+        this.mane = mane;
     }
 
     @Override
+    public void makeNoise() {
+        super.makeNoise( );
+    }
+
+
+    @Override
     public void eat() {
-        System.out.println( "Horse eat "+ food);
+        super.eat( );
     }
 
     @Override
     public void sleep() {
-
-        System.out.println( "Horse sleep "+ location);
+        super.sleep( );
     }
 
     public void animalHas() {
 
-        System.out.println( "Horse has "+ mane);
+        System.out.println("Animal has " + mane);
     }
 
 
